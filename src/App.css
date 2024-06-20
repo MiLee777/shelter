@@ -1,7 +1,9 @@
 :root {
   --background-body-dark: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  --background-body-light: #FFF;
+  --background-body-light: #FFFFFF;
+  --background-button: #F1CDB3;
   --text-color-light: #CDCDCD;
+  --text-color-dark: #292929;
   --font-Arial: 'Arial';
   --font-Georgia: 'Georgia';
 }
@@ -14,19 +16,22 @@
 
 .header {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   background: var(--background-body-dark);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .header__menu {
-  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__link {
+  padding: 20px 30px;
   color: var(--text-color-light);
   font-size: 20px;
   font-family: var(--font-Arial);
@@ -47,4 +52,57 @@
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
+}
+
+.home__container {
+  padding: 20px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__content {
+  width: 30%;
+}
+
+h1 {
+  font-family: var(--font-Georgia);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.home__text {
+  margin-top: 40px;
+  color: var(--text-color-light);
+  font-family: var(--font-Arial);
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.home__btn {
+  padding: 15px 45px;
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-button);
+  border-radius: 30px;
+  font-size: 17px;
+  font-family: var(--font-Georgia);
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--text-color-dark);
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.home__btn {
+  background-color: #FDDCC4;
+}
+
+.home__img {
+  
 }

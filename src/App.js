@@ -14,9 +14,10 @@ import { Contacts } from "./components/main/Contact";
 function App() {
   return (
     <header className="header"> 
+    <div className="container">
       <Router>
         <nav className="header__menu">
-          <Link to='/home' className="header__link">
+          <Link to='/' className="header__link">
           <div>
             <p className="logo__title">Cozy House</p>
             <p className="logo__subtitle">Shelter for pets in Boston</p>
@@ -28,13 +29,14 @@ function App() {
           <Link to='/contact' className="header__link">Contacts</Link>
         </nav>
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<AboutTheShelter />} />
           <Route path='/pets' element={<OurPets />} />
           <Route path='/help' element={<HelpTheShelter />} />
           <Route path='/contact' element={<Contacts />} />
         </Routes>
       </Router>
+      </div>
     </header>
   );
 }
