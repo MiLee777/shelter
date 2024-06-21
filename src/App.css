@@ -1,6 +1,6 @@
 :root {
   --background-body-dark: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-  --background-body-light: #FFFFFF;
+  --background-body-white: #FFFFFF;
   --background-button: #F1CDB3;
   --text-color-light: #CDCDCD;
   --text-color-dark: #292929;
@@ -57,8 +57,10 @@
   letter-spacing: 0.1em;
 }
 
+/* HOME */
 .home__container {
-  padding: 20px 30px 0 30px;
+  margin-top: 100px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,11 +109,43 @@ h1 {
 }
 
 /* ABOUT THE SHELTER */
+.about__container {
+  padding: 0 30px;
+  background-color: var(--background-body-white);
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  align-items: center;
+}
 
+.about__content {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.title {
+  font-family: var(--font-Georgia);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about__text {
+  color: #4C4C4C;
+  font-family: var(--font-Arial);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
 
 /* FOOTER */
 .footer__container {
-  padding: 20px 30px 0 30px;
+  margin-top: 40px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
 }

@@ -3,8 +3,8 @@ import HomePuppy from '../../assets/image/home-puppy.png'
 import { Footer } from '../Footer';
 
 export function Home() {
-  return <div className="home">
-    <div className="container home__container">
+  return <div className='home'>
+    <div className='container home__container'>
       <div className='home__content'>
         <h1>Not only people need a house</h1>
         <p className='home__text'>
