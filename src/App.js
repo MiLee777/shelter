@@ -13,10 +13,9 @@ import { Contacts } from "./components/main/Contact";
 
 function App() {
   return (
-    <div className="header"> 
-    <div className="container">
+    <div className="App">
       <Router>
-        <nav className="header__menu">
+        <nav className="header__menu container">
           <Link to='/' className="header__link">
           <div>
             <p className="logo__title">Cozy House</p>
@@ -28,6 +27,7 @@ function App() {
           <Link to='/help' className="header__link">Help the Shelter</Link>
           <Link to='/contact' className="header__link">Contacts</Link>
         </nav>
+        <div className="content">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<AboutTheShelter />} />
@@ -35,9 +35,9 @@ function App() {
           <Route path='/help' element={<HelpTheShelter />} />
           <Route path='/contact' element={<Contacts />} />
         </Routes>
+        </div>
       </Router>
       </div>
-    </div>
   );
 }
 

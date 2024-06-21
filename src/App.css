@@ -4,8 +4,9 @@
   --background-button: #F1CDB3;
   --text-color-light: #CDCDCD;
   --text-color-dark: #292929;
+  --text-color-grey: #545454;
   --text-color-white: #FFFFFF;
-  --text-color-footer: #F1CDB3;
+  --text-color-contact: #F1CDB3;
   --font-Arial: 'Arial';
   --font-Georgia: 'Georgia';
 }
@@ -16,30 +17,39 @@
   box-sizing: border-box;
 }
 
-/* HEADER */
-.header {
-  width: 100%;
+a {
+  text-decoration: none;
+}
+
+.App {
   background: var(--background-body-dark);
 }
 
+/* HEADER */
 .container {
-  margin: 0 auto;
+  width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
-.header__menu {
+.header__menu, 
+.home__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
+}
+
+
+.header__menu {
+  height: 99px;
   align-items: center;
 }
 
 .header__link {
-  padding: 20px 30px;
   color: var(--text-color-light);
   font-size: 17px;
   font-family: var(--font-Arial);
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .logo__title {
@@ -47,7 +57,7 @@
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: var(--text-color-contact);
 }
 
 .logo__subtitle {
@@ -57,25 +67,30 @@
   letter-spacing: 0.1em;
 }
 
+.content {
+  height: calc(100vh - 99px);
+}
+
 /* HOME */
+.home {
+  height: 100%;
+}
+
 .home__container {
-  margin-top: 100px;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 100%;
 }
 
 .home__content {
   width: 30%;
+  align-self: center;
 }
 
 h1 {
   font-family: var(--font-Georgia);
+  color: var(--text-color-white);
   font-size: 44px;
   font-weight: 400;
   line-height: 130%;
-  color: #FFFFFF;
 }
 
 .home__text {
@@ -108,21 +123,29 @@ h1 {
   background-color: #FDDCC4;
 }
 
+.home__img {
+  align-self: flex-end;
+}
+
 /* ABOUT THE SHELTER */
-.about__container {
-  padding: 0 30px;
+.about {
+  height: 100%;
   background-color: var(--background-body-white);
+}
+
+.about__container {
+  height: 100%;
+  padding-top: 120px;
   display: flex;
   justify-content: center;
-  column-gap: 50px;
-  align-items: center;
+  column-gap: 100px;
 }
 
 .about__content {
   width: 33%;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 50px;
 }
 
 .title {
@@ -131,34 +154,40 @@ h1 {
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #545454;
+  color: var(--text-color-grey);
 }
 
 .about__text {
-  color: #4C4C4C;
+  color: var(--text-color-dark);
   font-family: var(--font-Arial);
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
 }
 
-/* FOOTER */
-.footer__container {
-  margin-top: 40px;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
+/* CONTACT */
+.contact {
+  height: 100%;
 }
 
-.footer__content {
-  width: 25%;
+.contact__container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  row-gap: 100px;
+
+}
+
+.contact__content {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-self: center;
   row-gap: 30px;
 }
 
-.footer__title {
+.contact__title {
   color: var(--text-color-white);
   font-family: var(--font-Georgia);
   font-weight: 400;
@@ -167,27 +196,29 @@ h1 {
   letter-spacing: 0.06em;
 }
 
-.footer__info {
+.contact__info {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: var(--text-color-footer);
+  color: var(--text-color-contact);
 }
 
-.footer__info a {
+.contact__info a {
   text-decoration: none;
-  color: var(--text-color-footer);
+  color: var(--text-color-contact);
 }
 
-.footer__info i {
+.contact__info i {
   font-size: 35px;
 }
 
-.footer__info a,
-.footer__info span {
+.contact__info a,
+.contact__info span {
   font-size: 20px;
   font-family: var(--font-Georgia);
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
 }
+
+

@@ -1,10 +1,9 @@
 import AboutPets from '../../assets/image/about-pets.png'
-import { Footer } from '../Footer'
 
 export function AboutTheShelter() {
-  return <div>
+  return <div className='about'>
     <div className='container about__container'>
-      <div>
+      <div className='about__img'>
         <img src={ AboutPets } alt='Pets' />
       </div>
       <div className='about__content'>
@@ -23,6 +22,5 @@ export function AboutTheShelter() {
             </p>
       </div>
     </div>
-    <Footer />
   </div>
 }
