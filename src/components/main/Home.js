@@ -1,5 +1,6 @@
 import { OurPets } from './OurPets';
 import HomePuppy from '../../assets/image/home-puppy.png'
+import { Footer } from '../Footer';
 
 export function Home() {
   return <div className="home">
@@ -13,10 +14,10 @@ export function Home() {
           </p>
         <button className='home__btn'><a href={ OurPets }>Make a friend</a></button>
       </div>
-      <div className='home__img'>
+      <div>
         <img src={ HomePuppy } alt='Puppy' />
       </div>
-
     </div>
+    <Footer />
   </div>
 }

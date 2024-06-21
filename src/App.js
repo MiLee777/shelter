@@ -13,7 +13,7 @@ import { Contacts } from "./components/main/Contact";
 
 function App() {
   return (
-    <header className="header"> 
+    <div className="header"> 
     <div className="container">
       <Router>
         <nav className="header__menu">
@@ -37,7 +37,7 @@ function App() {
         </Routes>
       </Router>
       </div>
-    </header>
+    </div>
   );
 }
 
