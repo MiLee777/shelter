@@ -1,9 +1,19 @@
+import { useState } from 'react';
+import { Modal  } from '../../modal/Modal';
+import { Content } from '../../modal/Content';
 import { Pets } from '../../data';
 import ArrowLeft from '../../assets/image/icons/arrow-left.svg';
 import ArrowRight from '../../assets/image/icons/arrow-right.svg';
-import { useState } from 'react';
 
 export function OurPets() {
+  const [ isOpen, setIsOpen ] = useState(false);
+  const [ selectedPet, setSelectedPet ] = useState(null)
+
+  const openInfo = (id) => {
+    let info = Pets.find(pet => pet.id === id);
+    setSelectedPet(info);
+    setIsOpen(true);
+  }
 
   const generateRandomCards = (prevCards) => {
     const newCards = [];
@@ -35,14 +45,21 @@ export function OurPets() {
       <div className='pets__content'>
       {cards.map((cardsIndex) => {
         const pet = Pets[cardsIndex]
-          const { name, src } = pet;
+        const { id, name, image } = pet;
 
           return (
               <div className='pets__box' key={ cardsIndex }>
-                <img src={ src } alt='Pet' />
+                <img src={ image } alt='Pet' />
                 <div className='pet__info'>
                   <p className='pets__name'>{ name }</p>
-                  <button className='btn pets__box-btn'>Learn more</button>
+                  <button className='btn pets__box-btn' onClick={() => openInfo(id)}>Learn more</button>
+
+                  {isOpen &&
+                  <Modal setIsOpen={ setIsOpen }>
+                    <Content setIsOpen={ setIsOpen } pet={ selectedPet } />
+                  </Modal>
+                  }
+
                 </div>
               </div>
           )
