@@ -11,7 +11,7 @@ export function Home() {
           and open heart. He or she will love you more than anybody else in the world, 
           you will see!
           </p>
-        <button className='home__btn'><a href={ OurPets }>Make a friend</a></button>
+        <button className='btn home__btn'><a href={ OurPets }>Make a friend</a></button>
       </div>
       <div className='home__img'>
         <img src={ HomePuppy } alt='Puppy' />

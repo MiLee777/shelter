@@ -6,7 +6,6 @@ import Timmy from './assets/image/our-pets/Timmy.png';
 import Charly from './assets/image/our-pets/Charly.png';
 import Scarlett from './assets/image/our-pets/Scarlett.png';
 import Freddie from './assets/image/our-pets/Freddie.png';
-import Sayko from './assets/image/our-pets/Sayko.avif';
 
 export const Pets = [
 
@@ -109,19 +108,6 @@ export const Pets = [
     info: {
       age: '1 year old',
       inoculations: 'all',
-      diseases: 'none',
-      parasites: 'none'
-    }
-  },
-
-  {
-    name: 'Sayko',
-    breed: 'Cat - British Shorthair',
-    src: Sayko,
-    text: 'Sayko alittle princess.',
-    info: {
-      age: '1.5 month',
-      inoculations: 'none',
       diseases: 'none',
       parasites: 'none'
     }
