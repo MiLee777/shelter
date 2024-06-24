@@ -1,10 +1,12 @@
 import './Modal.css';
+import '../App.css';
 
 export const Content = ({ setIsOpen, pet }) => {
   const { name, image, breed, text, info } = pet;
   const { age, inoculations, diseases, parasites } = info;
   return (
-    <div className="modal__content">
+    <div className="modal__container">
+      <div className="modal__content">
       <div className='modal__img'>
         <img src={ image } alt={ name } />
       </div>
@@ -19,7 +21,8 @@ export const Content = ({ setIsOpen, pet }) => {
           <li><b>Parasites:</b> { parasites }</li>
         </ul>
       </div>
-      <button onClick={() => setIsOpen(false)}>X</button>
+      </div>
+      <button onClick={() => setIsOpen(false)} className='modal__btn'>X</button>
     </div>
   )
 }
