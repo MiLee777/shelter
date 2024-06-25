@@ -1,4 +1,3 @@
-import { OurPets } from './OurPets';
 import HomePuppy from '../../assets/image/home-puppy.png'
 
 export function Home() {
@@ -11,7 +10,7 @@ export function Home() {
           and open heart. He or she will love you more than anybody else in the world, 
           you will see!
           </p>
-        <button className='btn home__btn'><a href={ OurPets }>Make a friend</a></button>
+        <button className='btn home__btn'><a href='/pets'>Make a friend</a></button>
       </div>
       <div className='home__img'>
         <img src={ HomePuppy } alt='Puppy' />

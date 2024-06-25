@@ -118,7 +118,6 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: var(--font-Georgia);
-  color: var(--text-color-dark);
   border-radius: 30px;
   font-size: 17px;
   line-height: 130%;
@@ -126,13 +125,18 @@ h1 {
   border: none;
 }
 
+
 .home__btn {
   margin-top: 30px;
   background-color: var(--background-button);
 }
 
-.home__btn {
+.home__btn:hover {
   background-color: #FDDCC4;
+}
+
+.home__btn a {
+  color: var(--text-color-dark);
 }
 
 .home__img {
@@ -177,69 +181,15 @@ h1 {
   line-height: 160%;
 }
 
-/* CONTACT */
-.contact {
-  height: 100%;
-}
-
-.contact__container {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
-  row-gap: 100px;
-
-}
-
-.contact__content {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
-}
-
-.contact__title {
-  color: var(--text-color-white);
-  font-family: var(--font-Georgia);
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-}
-
-.contact__info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: var(--text-color-contact);
-}
-
-.contact__info a {
-  text-decoration: none;
-  color: var(--text-color-contact);
-}
-
-.contact__info i {
-  font-size: 35px;
-}
-
-.contact__info a,
-.contact__info span {
-  font-size: 20px;
-  font-family: var(--font-Georgia);
-  font-weight: 400;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-}
+/* OUR PETS */
 
 .pets {
   height: 100%;
   background-color: var(--background-body-grey);
 }
 
-.pets__container {
+.pets__container,
+.help__container {
   padding-top: 50px;
   height: 100%;
   display: flex;
@@ -332,3 +282,127 @@ h1 {
   border: 2px solid #FDDCC4;
 }
 
+/* HELP THE SHELTER */
+
+.help {
+  height: 100%;
+  background-color: var(--background-body-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.help__content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.help__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.help__donation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.help__info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.help__text {
+  color: var(--text-color-grey);
+  font-family: 'Georgia';
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.help__info p {
+  font-size: 15px;
+}
+
+.help__card {
+  padding: 10px 15px;
+  width: 349px;
+  display: flex;
+  column-gap: 10px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.help__card:hover {
+  scale: 1.1;
+}
+
+.help__card span {
+  font-size: 20px;
+}
+
+/* CONTACT */
+.contact {
+  height: 100%;
+}
+
+.contact__container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  row-gap: 100px;
+
+}
+
+.contact__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.contact__title {
+  color: var(--text-color-white);
+  font-family: var(--font-Georgia);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.contact__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--text-color-contact);
+}
+
+.contact__info a {
+  text-decoration: none;
+  color: var(--text-color-contact);
+}
+
+.contact__info i {
+  font-size: 35px;
+}
+
+.contact__info a,
+.contact__info span {
+  font-size: 20px;
+  font-family: var(--font-Georgia);
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
