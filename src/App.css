@@ -56,6 +56,11 @@ button {
   font-size: 17px;
   font-family: var(--font-Arial);
   letter-spacing: 0.03em;
+  transition: 0.5s ease-in;
+}
+
+.header__link:hover {
+  scale: 1.1;
 }
 
 .logo__title {

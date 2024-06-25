@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal  } from '../../modal/Modal';
 import { Content } from '../../modal/Content';
-import { Pets } from '../../data';
+import { Pets } from '../../data.pets';
 import ArrowLeft from '../../assets/image/icons/arrow-left.svg';
 import ArrowRight from '../../assets/image/icons/arrow-right.svg';
 
