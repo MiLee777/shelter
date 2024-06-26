@@ -36,24 +36,29 @@ button {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 2rem;
 }
 
-.header__menu, 
+.header__content, 
 .home__container {
   display: flex;
   justify-content: space-between
 }
 
 
-.header__menu {
+.header__content {
   height: 99px;
   align-items: center;
 }
 
+.header__menu {
+  display: flex;
+  column-gap: 70px;
+}
+
 .header__link {
   color: var(--text-color-light);
-  font-size: 17px;
+  font-size: 1.1rem;
   font-family: var(--font-Arial);
   letter-spacing: 0.03em;
   transition: 0.5s ease-in;
@@ -65,7 +70,7 @@ button {
 
 .logo__title {
   font-family: var(--font-Georgia);
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 110%;
   letter-spacing: 0.06em;
   color: var(--text-color-contact);
@@ -73,9 +78,77 @@ button {
 
 .logo__subtitle {
   margin-top: 9px;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 0.8rem;
+  line-height: 110%;
   letter-spacing: 0.1em;
+}
+
+
+.header__hamb {
+  display: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 950px) {
+  
+
+  .header__hamb {
+    display: block;
+  }
+
+  .header__hamb-field {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  .header__bar {
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: var(--text-color-contact);
+    transition: 0.5s ease-in-out;
+  }
+
+  .header__menu {
+    width: 100%;
+    height: 40%;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    background-color: #262425;
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px #F1CDB3;
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: 0.7s;
+  }
+
+  .show {
+    top: 0;
+  }
+
+  .header__bar.active:nth-child(1) {
+    transform: translateY(8px) translateX(-8px) rotate(90deg);
+    transition: 0.7s;
+  }
+
+  .header__bar.active:nth-child(2) {
+    transform: translateY(0px) translateX(0px) rotate(90deg);
+    transition: 0.7s;
+  }
+
+  .header__bar.active:nth-child(3) {
+    transform: translateY(-8px) translateX(8px) rotate(90deg);
+    transition: 0.7s;
+  }
 }
 
 .content {
@@ -99,7 +172,7 @@ button {
 h1 {
   font-family: var(--font-Georgia);
   color: var(--text-color-white);
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 400;
   line-height: 130%;
 }
@@ -108,7 +181,7 @@ h1 {
   margin-top: 40px;
   color: var(--text-color-light);
   font-family: var(--font-Arial);
-  font-size: 15px;
+  font-size: 0.93rem;
   line-height: 160%;
 }
 
@@ -119,7 +192,7 @@ h1 {
   align-items: center;
   font-family: var(--font-Georgia);
   border-radius: 30px;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 130%;
   letter-spacing: 0.06em;
   border: none;
@@ -141,6 +214,52 @@ h1 {
 
 .home__img {
   align-self: flex-end;
+}
+
+.home__img img {
+  width: 100%;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 1230px) {
+  .home__container {
+    column-gap: 100px;
+
+  }
+  .home__content {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .home__content {
+    width: 43%;
+    margin-top: 50px;
+    align-self: flex-start;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .home__container{
+    flex-direction: column;
+  }
+
+  .home__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1,
+  .home__img {
+    text-align: center;
+  }
+
+  .home__img img {
+    width: 70%;
+  }
 }
 
 /* ABOUT THE SHELTER */
@@ -179,6 +298,22 @@ h1 {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 1230px) {
+
+}
+
+/* For medium devices */
+@media all and (max-width: 615px) {
+
+}
+
+/* For small devices */
+@media all and (max-width: 360px) {
+
 }
 
 /* OUR PETS */
