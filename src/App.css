@@ -546,8 +546,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  row-gap: 100px;
-
+  row-gap: 6.25rem;
 }
 
 .contact__content {
@@ -555,14 +554,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 1.87rem;
 }
 
 .contact__title {
   color: var(--text-color-white);
   font-family: var(--font-Georgia);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.06em;
 }
@@ -570,7 +569,7 @@ h1 {
 .contact__info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   color: var(--text-color-contact);
   cursor: pointer;
   transition: 0.5s ease-in-out
@@ -586,30 +585,45 @@ h1 {
 }
 
 .contact__info i {
-  font-size: 35px;
+  font-size: 2.18rem;
 }
 
 .contact__info a,
 .contact__info span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: var(--font-Georgia);
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
 }
 
+.contact__img img {
+  width: 100%;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media all and (max-width: 1030px) {
+@media all and (max-width: 1230px) {
+  .contact__container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 3.25rem;
+  }
 
+  .contact__content {
+    width: 100%;
+    row-gap: 0.87rem;
+  }
+  
+  .contact__title {
+    text-align: center;
+  }
 }
 
 /* For medium devices */
-@media all and (max-width: 780px) {
-
-}
-
-/* For small devices */
-@media all and (max-width: 360px) {
-
+@media all and (max-width: 545px) {
+  .contact__img img {
+    width: 80%;
+  }
 }
