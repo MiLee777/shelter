@@ -24,7 +24,7 @@ export function HelpTheShelter() {
     </div>
 
     <div className='container  help__donation'>
-      <div>
+      <div className='help__img'>
         <img src={ Dog } alt='Dog' />
       </div>
       <div className='help__info'>

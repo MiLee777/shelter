@@ -91,8 +91,6 @@ button {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media all and (max-width: 950px) {
-  
-
   .header__hamb {
     display: block;
   }
@@ -469,6 +467,10 @@ h1 {
   justify-content: space-evenly;
 }
 
+.help__img img {
+  width: 100%;
+}
+
 .help__info {
   margin-top: 1.87rem;
   display: flex;
@@ -510,17 +512,27 @@ h1 {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media all and (max-width: 915px) {
+  .help__content {
+    gap: 4.25rem;
+  }
 
+  .help__donation {
+    padding: 0 2rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 1.87rem;
+  }
+
+  .help__info {
+    align-items: center;
+  }
 }
 
 /* For medium devices */
-@media all and (max-width: 780px) {
-
-}
-
-/* For small devices */
-@media all and (max-width: 360px) {
-
+@media all and (max-width: 515px) {
+  .help__content {
+    gap: 2.25rem;
+  }
 }
 
 /* CONTACT */
@@ -529,7 +541,7 @@ h1 {
 }
 
 .contact__container {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
