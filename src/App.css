@@ -264,29 +264,31 @@ h1 {
 
 /* ABOUT THE SHELTER */
 .about {
-  height: 100%;
+  min-height: 100%;
   background-color: var(--background-body-white);
 }
 
 .about__container {
   height: 100%;
-  padding-top: 120px;
+  padding-top: 5.5rem;
   display: flex;
   justify-content: center;
-  column-gap: 100px;
+  column-gap: 6.25rem;
 }
+
+
 
 .about__content {
   width: 33%;
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 3rem;
 }
 
 .title {
   font-family: var(--font-Georgia);
   font-weight: 400;
-  font-size: 35px;
+  font-size: 2.2rem;
   line-height: 130%;
   letter-spacing: 0.06em;
   color: var(--text-color-grey);
@@ -296,24 +298,29 @@ h1 {
   color: var(--text-color-dark);
   font-family: var(--font-Arial);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.94rem;
   line-height: 160%;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media all and (max-width: 1230px) {
+@media all and (max-width: 1030px) {
+  .about__container {
+    padding-top: 2.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 3rem;
+  }
 
-}
+  .about__content {
+    width: 100%;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
 
-/* For medium devices */
-@media all and (max-width: 615px) {
-
-}
-
-/* For small devices */
-@media all and (max-width: 360px) {
-
+  .title {
+    text-align: center;
+  }
 }
 
 /* OUR PETS */
@@ -417,41 +424,56 @@ h1 {
   border: 2px solid #FDDCC4;
 }
 
-/* HELP THE SHELTER */
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 1030px) {
 
+}
+
+/* For medium devices */
+@media all and (max-width: 780px) {
+
+}
+
+/* For small devices */
+@media all and (max-width: 360px) {
+
+}
+
+/* HELP THE SHELTER */
 .help {
-  height: 100%;
+  min-height: 100%;
   background-color: var(--background-body-grey);
   display: flex;
   flex-direction: column;
 }
 
 .help__content {
-  margin-top: 30px;
+  margin-top: 1.87rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .help__items {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 1.87rem;
 }
 
 .help__donation {
-  margin-top: 30px;
+  margin-top: 1.87rem;
   display: flex;
   justify-content: space-evenly;
 }
 
 .help__info {
-  margin-top: 30px;
+  margin-top: 1.87rem;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 1.25rem;
 }
 
 .help__text {
@@ -463,14 +485,14 @@ h1 {
 }
 
 .help__info p {
-  font-size: 15px;
+  font-size: 0.94rem;
 }
 
 .help__card {
   padding: 10px 15px;
-  width: 349px;
+  width: 21.8rem;
   display: flex;
-  column-gap: 10px;
+  column-gap: 0.62rem;
   background-color: #F1CDB3;
   border-radius: 9px;
   cursor: pointer;
@@ -482,7 +504,23 @@ h1 {
 }
 
 .help__card span {
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 915px) {
+
+}
+
+/* For medium devices */
+@media all and (max-width: 780px) {
+
+}
+
+/* For small devices */
+@media all and (max-width: 360px) {
+
 }
 
 /* CONTACT */
@@ -546,4 +584,20 @@ h1 {
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 1030px) {
+
+}
+
+/* For medium devices */
+@media all and (max-width: 780px) {
+
+}
+
+/* For small devices */
+@media all and (max-width: 360px) {
+
 }
