@@ -3,7 +3,7 @@ This is a React-based website for the "Cozy House" shelter, providing informatio
 
 ## Live Demo
 
-You can view the live demo of this project [here](https://milee777-coffee-shop-menu.netlify.app/).
+You can view the live demo of this project [here](https://milee777-cozy-house-shelter.netlify.app/).
 
 ## Technologies Used
 
