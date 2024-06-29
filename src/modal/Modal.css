@@ -23,13 +23,13 @@
 }
 
 .modal__content {
-  padding: 50px;
+  padding: 3.12rem;
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 9px;
   display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 3.12rem;
 }
 
 .modal__img img {
@@ -48,21 +48,21 @@
 
 .modal__title {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
 
 .modal__subtitle {
-  margin-top: 10px;
+  margin-top: 0.62rem;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 1.44rem;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
 
 .modal__text {
-  margin-top: 30px;
+  margin-top: 1.87rem;
   letter-spacing: 0.06em;
 }
 
@@ -87,4 +87,42 @@
 
 .modal__btn:hover {
   scale: 1.1;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media all and (max-width: 1440px) {
+  .modal__container {
+    width: 65%;
+    height: 50%;
+  }
+}
+
+@media all and (max-width: 1275px) {
+  .modal__container {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media all and (max-width: 1120px) {
+  .modal__img {
+    display: none;
+  }
+}
+
+/* For medium devices */
+@media all and (max-width: 545px) {
+  .modal__container {
+    width: 70%;
+    height: 60%;
+  }
+}
+
+/* For small devices */
+@media all and (max-width: 450px) {
+  .modal__container {
+    width: 70%;
+    height: 70%;
+  }
 }
