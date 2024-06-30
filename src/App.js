@@ -4,17 +4,24 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './App.css';
+import { useLayoutEffect, useState } from "react";
+import gsap from "gsap";
 import { Home } from "./components/main/Home";
 import { AboutTheShelter } from "./components/main/AboutTheShelter";
 import { OurPets } from "./components/main/OurPets";
 import { HelpTheShelter } from "./components/main/HelpTheShelter";
 import { Contacts } from "./components/main/Contact";
-import { useState } from "react";
+import './App.css';
 
 function App() {
   
   const [showMenu, setShowMenu] = useState(false);
+
+  useLayoutEffect(() => {
+    gsap.from('.header__content', {
+    
+    })
+  }, []);
 
   return (
     <div className="App">
